@@ -26,6 +26,7 @@ public class JPAUserDAO implements UserDAO{
 		return result;
 	}
 
+	/*
 	public User getUser(String username, String password) {
 		Query query = em.createQuery("from User u where u.username = :username and u.password = :password");
 		query.setParameter("username", username);
@@ -36,5 +37,6 @@ public class JPAUserDAO implements UserDAO{
 		}
 		return result.get(0);
 	}
+	*/
 
 }
