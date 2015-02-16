@@ -23,16 +23,16 @@ public class User {
 	private String password;
 	
 	@Column(name="userType")
-	private Integer iduserType;
+	private Integer userType;
 
 	public User() {
 	}
 
-	public User(String username, String password, Integer iduserType) {
+	public User(String username, String password, Integer userType) {
 		super();
 		this.username = username;
 		this.password = password;
-		this.iduserType = iduserType;
+		this.userType = userType;
 	}
 
 	public Integer getId() {
@@ -60,11 +60,11 @@ public class User {
 	}
 
 	public Integer getIduserType() {
-		return iduserType;
+		return userType;
 	}
 
 	public void setIduserType(Integer iduserType) {
-		this.iduserType = iduserType;
+		this.userType = iduserType;
 	}
 
 }
