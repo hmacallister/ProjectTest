@@ -17,10 +17,10 @@ public class User {
 	private Integer id;
 	
 	@Column(name="username")
-	private Integer username;
+	private String username;
 	
 	@Column(name="password")
-	private Integer password;
+	private String password;
 	
 	@Column(name="userType")
 	private Integer iduserType;
@@ -28,7 +28,7 @@ public class User {
 	public User() {
 	}
 
-	public User(Integer username, Integer password, Integer iduserType) {
+	public User(String username, String password, Integer iduserType) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -43,19 +43,19 @@ public class User {
 		this.id = id;
 	}
 
-	public Integer getUsername() {
+	public String getUsername() {
 		return username;
 	}
 
-	public void setUsername(Integer username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 
-	public Integer getPassword() {
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPassword(Integer password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 
