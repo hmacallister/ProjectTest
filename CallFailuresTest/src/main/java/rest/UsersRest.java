@@ -28,13 +28,12 @@ public class UsersRest {
 		return service.getUsers();
 	}
 	
-	/*
 	@POST
 	@Path("/getuser/{username}{password}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public User getUser(@PathParam("username") String username, @PathParam("password") String password) {
 		return service.getUser(username, password);
 	}
-	*/
+	
 
 }

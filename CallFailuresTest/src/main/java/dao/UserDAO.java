@@ -7,6 +7,6 @@ import entities.User;
 public interface UserDAO {
 	
 	Collection<User> getAllUsers();
-	//User getUser(String username, String password);
+	User getUser(String username, String password);
 
 }

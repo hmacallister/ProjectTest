@@ -10,6 +10,6 @@ import entities.User;
 public interface UserServiceLocal {
 	
 	Collection<User> getUsers();
-	//User getUser(String username, String password);
+	User getUser(String username, String password);
 
 }
