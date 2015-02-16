@@ -33,7 +33,7 @@ public class JPAUserDAO implements UserDAO{
 		query.setParameter("password", password);
 		List<User> result = query.getResultList();
 		if(result.isEmpty()){
-			return null;
+			return new User("ERROR", "ERROR", -1);
 		}
 		return result.get(0);
 	}
