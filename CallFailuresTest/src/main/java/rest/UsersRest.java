@@ -22,6 +22,7 @@ public class UsersRest {
 	private UserServiceLocal service;
 
 	@GET
+	@Path("/getallusers")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Collection<User> getAllFailures() {
 		return service.getUsers();
