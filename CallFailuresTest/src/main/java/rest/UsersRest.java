@@ -46,7 +46,10 @@ public class UsersRest {
 	@GET
 	@Path("/test")
 	public void Test() {
-		User user = new User("TEST", "TEST", 1);
+		User user = new User();
+		user.setUsername("test");
+		user.setPassword("test");
+		user.setUserType(1);
 		service.addUser(user);
 	}
 	
