@@ -31,10 +31,10 @@ public class UsersRest {
 	}
 	
 	@POST
-	@Path("/getuser/{username}{password}")
+	@Path("/getuser/{user}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public User getUser(@PathParam("username") String username, @PathParam("password") String password) {
-		return service.getUser(username, password);
+	public User getUser(@PathParam("user") User user) {
+		return service.getUser(user);
 	}
 	
 	@PUT
@@ -43,15 +43,6 @@ public class UsersRest {
 		 service .addUser(user);
 	}
 	
-	@GET
-	@Path("/test")
-	public void Test() {
-		User user = new User();
-		user.setUsername("test");
-		user.setPassword("test");
-		user.setUserType(1);
-		service.addUser(user);
-	}
 	
 
 }
