@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -37,9 +38,16 @@ public class UsersRest {
 	}
 	
 	@PUT
-	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
 	public void addUser(User user){
 		 service .addUser(user);
+	}
+	
+	@GET
+	@Path("/test")
+	public void Test() {
+		User user = new User("TEST", "TEST", 1);
+		service.addUser(user);
 	}
 	
 
