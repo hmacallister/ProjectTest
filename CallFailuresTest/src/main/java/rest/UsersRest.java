@@ -38,8 +38,8 @@ public class UsersRest {
 	
 	@PUT
 	@Produces(MediaType.APPLICATION_JSON)
-	public String addUser(User user){
-		return service .addUser(user);
+	public void addUser(User user){
+		 service .addUser(user);
 	}
 	
 

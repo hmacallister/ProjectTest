@@ -8,5 +8,5 @@ public interface UserDAO {
 	
 	Collection<User> getAllUsers();
 	User getUser(String username, String password);
-	String addUser(User user);
+	void addUser(User user);
 }

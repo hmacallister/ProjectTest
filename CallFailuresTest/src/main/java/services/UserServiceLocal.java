@@ -11,6 +11,6 @@ public interface UserServiceLocal {
 	
 	Collection<User> getUsers();
 	User getUser(String username, String password);
-	String addUser(User user);
+	void addUser(User user);
 
 }
