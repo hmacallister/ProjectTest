@@ -25,6 +25,10 @@ public class UserServiceEJB implements UserServiceLocal{
 		return dao.getUser(username, password);
 	}
 	
+	public String addUser(User user){
+		return dao.addUser(user);
+	}
+	
 
 
 
