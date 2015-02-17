@@ -39,7 +39,7 @@ public class JPAUserDAO implements UserDAO{
 	}
 	
 	public String addUser(User user){
-		Query query = em.createQuery("from CompactDisc");
+		Query query = em.createQuery("from User");
 		List<User> users = query.getResultList();
 		if (!users.contains(user)){
 			em.persist(user);
