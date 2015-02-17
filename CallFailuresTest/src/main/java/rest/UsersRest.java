@@ -31,9 +31,9 @@ public class UsersRest {
 	}
 	
 	@POST
-	@Path("/getuser/{user}")
+	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public User getUser(@PathParam("user") User user) {
+	public User getUser(User user) {
 		return service.getUser(user);
 	}
 	
