@@ -30,6 +30,7 @@ button[type] {
 
 	<div id="response">
 		<pre></pre>
+		<p id="infoText">""</p>
 	</div>
 
 	<div id="loginContent" class="container">
@@ -76,9 +77,11 @@ button[type] {
 						processData : false,
 						success : function(data, textStatus, jQxhr) {
 							$('#response pre').html(JSON.stringify(data));
+							document.write('<p>Logged In!</p><a href ="index.html">Continue</a>');
 						},
 						error : function(jqXhr, textStatus, errorThrown) {
 							console.log(errorThrown);
+							
 						}
 					});
 					e.preventDefault();
